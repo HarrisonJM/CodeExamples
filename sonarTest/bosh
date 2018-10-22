@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# We need to get the required scripts!
+if [[ ! -f "poller.sh" || ! -f "postJobMerge.sh" || ! -f "removeOldTars.sh" ]]; then
+  echo "files missing"
+  svn co https://svn.sdm.nsn-rdnet.net/testTools/Sonar/trunk .
+else
+  echo "Files present"
+  svn update
+fi
+
+
+if [[ -f "incGen2.sh" || -f "postJobMerge.sh" ]]; then
+  echo "Files present"
+  svn update
+else
+  echo "files missing"
+  svn co https://svn.sdm.nsn-rdnet.net/testTools/Sonar/trunk .
+fi

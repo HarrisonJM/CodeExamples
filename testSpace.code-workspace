@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.ptest": "perl",
+			"*.am": "makefile",
+			"iostream": "cpp",
+			"ostream": "cpp",
+			"ios": "cpp",
+			"clocale": "cpp",
+			"sstream": "cpp"
+		}
+	}
+}

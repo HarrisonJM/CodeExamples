@@ -1,0 +1,4 @@
+<test>
+  More testing!
+  <testinside blah="i am a blah"/>
+</test>
